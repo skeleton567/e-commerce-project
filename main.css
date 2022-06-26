@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.body{
+   width: 80%;
+   font-family: 'Kumbh Sans', sans-serif;
+   display: flex;
+   flex-direction: column;
+   
+   align-items: center;
+   justify-content: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+#cart{
+    
+    z-index: 1000;
+    position: fixed;
+    top: 70px;
+    right: 100px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 10px 8px #888888;
+    padding-left: 5px;
+
+    
+}
+
+
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-bottom: 10px ;
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    margin-top: 15px;
+}
+
+#ul{
+    display: flex;
+    align-items: flex-start;
+   justify-content:space-evenly ;
+    width: 400px;
+    cursor: pointer;
+    
+
+}
+
+.logoNav{
+
+    display: flex;
+    align-items: flex-start;
+    justify-content:space-around;
+    width: 600px;
+    align-items: center;
+
+}
+
+.logo{
+    width: 100px;
+}
+
+
+#avatar{
+    width: 50px;
+    height: 50px;
+    border: 2px solid hsl(26, 100%, 55%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cartAvatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    
+}
+
+main{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin-top: 50px;
+}
+
+
+#mainContent{
+    display: grid;
+    align-items: center;
+    width: 60%;
+    
+    padding: 0;
+
+}
+
+
+#photos {
+
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    height: 600px;
+    
+
+}
+
+
+#mainPhoto{
+
+    width: 470px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0, 10px;
+}
+
+.mainProduct{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+#thumbnail {
+    display: flex;
+    width: 470px;
+    justify-content: space-between;
+}
+
+
+.thumbnail{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#sneaker{
+    color: hsl(26, 100%, 55%);
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+    margin-top: 0px;
+}
+
+.smaller{
+    width: 50%;
+}
+
+#text{
+    color: hsl(219, 9%, 45%);
+}
+
+#discount{
+    font-weight: 700;
+    font-size: 1.6rem;
+    margin: 5px;
+    margin-left: 0%;
+}
+
+
+#price{
+
+    color: hsl(219, 9%, 45%);
+    text-decoration: line-through;
+    
+
+}
+
+#percent{
+
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    padding: 0.5% 1%;
+    font-weight: 700;
+    
+    margin: 0;
+    margin-left: 10px;
+}
+
+
+#Pair{
+    
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
+#btn{
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding: 8px 65px;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border-color: hsl(26, 100%, 55%);
+    border-radius: 6px;
+    font-size: 1.5rem;
+
+
+}
+
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#addItem{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    width: 29%;
+    background-color: hsl(223, 64%, 98%);
+    padding: 12px 0px;
+    border-radius: 6px;
+
+}
+
+#lightbox{
+    position: fixed;
+    
+    width: 100%;
+    height: 150vh;
+    background-color:  rgba(0, 0, 0, .75);
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+   
+}
+
+
+#photoNavigation{
+    display: flex;
+    align-items: center;
+}
+
+#mainPhotol{
+
+    width: 540px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0, 10px;
+    margin-bottom: 20px;
+}
+
+.close{
+    
+    width: 25px;
+    height: 25px;
+    color: black;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#close{
+    width: 100%;
+    height: 100%;
+}
+
+.close :hover {
+    filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+#next, #previous{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.nextPrev{
+    width: 20px;
+    height: 20px;
+    
+}
+
+
+.nextPrev :hover{
+    filter: grayscale(100%) brightness(70%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+.mainProductl{
+    width: 500px;
+    height: 100%;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+
+.ligthboxOn{
+    cursor: pointer;
+}
+
+
+
+.thumbnail:hover, .ligthboxOn:hover{
+    filter: grayscale(100);
+}
+
+.quantity{
+    cursor: pointer;
+}
+
+#cartBtn{
+    cursor: pointer;
+}
+
+#cartText{
+   
+    border-bottom: 1px solid hsl(220, 14%, 75%);
+    padding: 5px;
+}
+
+.thumbnail :active{
+    border: 2px solid hsl(26, 100%, 55%);
+}
+
+
+#css{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#center{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    width: 80%;
+}
+
+
+#cartImg{
+    width: 70px;
+    height: 70px;
+}
+
+#merchandize{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+
+    
+
+}
+
+.merchandizeText{
+    color: hsl(219, 9%, 45%);
+    font-size: 0.9rem;
+}
+
+.hundred{
+    width: 100%;
+    
+
+}
+
+.delete{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.btnCart{
+    background: none;
+	border: none;
+	padding: 0;
+	font: inherit;
+
+	outline: inherit;
+    padding: 8px 100px;
+    color: white;
+    background-color: hsl(26, 100%, 55%);
+    border-color: hsl(26, 100%, 55%);
+    border-radius: 6px;
+    font-size: 1.5rem;
+    margin: 5px;
+
+}
+
+
+#formCart{
+    display: flex;
+    align-items: center;
+}
+
+#empty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

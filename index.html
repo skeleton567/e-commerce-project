@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="lightbox.js" defer></script>
+  <script src="cart.js" defer></script>
+  <title>E-commerce product page</title>
+
+</head>
+
+<body >
+
+  <!-- Cart in whicg merch is added for later buy -->
+
+  <div class="hundred hidden" id="cart">
+    <div class="hundred" id="css">
+    <div class="hundred" id="cartText">
+    <h2 >Cart</h2>
+  </div>
+      <div class="hundred" id="center">
+      <img id="cartImg" src="images/image-product-1-thumbnail.jpg" alt="">
+
+      <div class="hundred"id="merchandize">
+       <p class="merchandizeText">Limited Edition Sneakers</p>
+       <p class="merchandizeText">$125.00 x <span id="howMany">3</span> = $<span id="totalPrice">$375</span> </p>
+      </div>
+
+      <img class="delete" src="images/icon-delete.svg" alt="">
+    </div>
+
+    <form class="formCart" class="hundred">
+      <button disabled class="btnCart" type="submit">Purchase</button>
+    </form>
+  </div>
+
+  <div id="empty">
+
+    <h3>Your cart is empty</h3>
+
+  </div>
+
+  </div>
+
+  <!-- Ligthbox  in which user can closer look on merchandize -->
+
+  <div id="lightbox">  
+    <div id="photos">
+      <div id="mainPhotol">
+        <div class="close">
+        <img id="close" src="images/icon-close.svg" alt="" srcset="">
+      </div>
+      <div id="photoNavigation">
+        <div id="previous" class="close">
+        <img class="nextPrev"  src="images/icon-previous.svg" alt="" srcset="">
+      </div>
+      <img class="mainProductl" src="images/image-product-1.jpg" alt="">
+      <div id="next" class="close">
+      <img  class="nextPrev" src="images/icon-next.svg" alt="">
+    </div>
+    </div>
+    </div>
+    <div id="thumbnail">
+      <img class="thumbnail product1" src="images/image-product-1-thumbnail.jpg" alt="">
+      <img class="thumbnail product2" src="images/image-product-2-thumbnail.jpg" alt="">
+      <img class="thumbnail product3" src="images/image-product-3-thumbnail.jpg" alt="">
+      <img class="thumbnail product4" src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+    </div>
+    
+  </div>
+  
+
+  <!-- Div for making width of site lower -->
+
+  <div class="body">
+
+    <!-- header of page, on which nav, cart and avatar are located -->
+
+  <header id="header">
+
+
+
+    <div class="logoNav">
+      <div class="logo">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+
+      <div id="ul">
+        <p> Collections</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+  </div>
+
+    <div class="cartAvatar">
+      <img id="cartBtn" src="images/icon-cart.svg" alt="cart">
+      <img id="avatar" src="images/image-avatar.png" alt="">
+    </div>
+
+    
+  </header>
+  
+
+  <main>
+
+    <!-- Container of all preview photos of merchandize -->
+
+    <div id="photos">
+      <div id="mainPhoto">
+      <img class="mainProduct ligthboxOn" src="images/image-product-1.jpg" alt="">
+    </div>
+    <div id="thumbnail">
+      <img class="thumbnail product1 " src="images/image-product-1-thumbnail.jpg" alt="">
+      <img class="thumbnail product2 " src="images/image-product-2-thumbnail.jpg" alt="">
+      <img class="thumbnail product3 " src="images/image-product-3-thumbnail.jpg" alt="">
+      <img class="thumbnail product4 " src="images/image-product-4-thumbnail.jpg" alt="">
+    </div>
+    </div>
+
+    <div class="smaller">
+
+      <!-- Main Content of page containing all information user needs and ability to order merchandise -->
+ 
+    <div id="mainContent">
+
+      <h2 id="sneaker">Sneaker Company</h2>
+
+ <h1> Limited Edition Sneakers</h1>
+
+  <p id="text">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+  <div>
+    <div id="Pair">
+  <p id="discount">$125.00</p>
+  <p id="percent">50%</p>
+</div>
+  <p id="price">$250.00</p>
+</div>
+
+  <form id="form" action="">
+    <div id="addItem">
+  <img id="minus" class="quantity" src="images/icon-minus.svg" alt="">
+  <span id="q">1</span>
+  <img id="plus" class="quantity" src="images/icon-plus.svg" alt="">
+</div>
+  <button id="btn" type="submit"> Add to Cart</button>
+</form>
+
+    </div>
+  </div>
+  
+
+
+</main>
+  
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Guram Tsagareishvili</a>.
+  </footer>
+
+</div>
+
+</body>
+</html>
